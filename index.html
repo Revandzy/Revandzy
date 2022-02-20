@@ -39,6 +39,7 @@
             <a href="https://twitter.com/bioib_" target="_blank" title="Twitter"
                 ><i class="fa-brands fa-twitter fa-fw fa-xl"></i
             ></a>
+            <a href="#" title="Bio#8801" id="discordSocialBtn" onclick="discordBtn()"><i class="fa-brands fa-discord fa-fw fa-xl"></i></a>
         </nav>
         <header>
             <div class="title">
@@ -52,5 +53,12 @@
                 </p>
             </div>
         </header>
+
+        <script>
+            function discordBtn() {
+             navigator.clipboard.writeText("Bio#8801").then(function (v) {
+                    alert("Copied to clipboard!");
+                })}
+        </script>
     </body>
 </html>
