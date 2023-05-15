@@ -1,0 +1,4 @@
+nav > .container-lg,
+main {
+  max-width: 768px !important;
+}
