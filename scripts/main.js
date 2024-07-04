@@ -11,18 +11,18 @@ const setLs = (key, value) => {
   localStorage.setItem(key, value);
 };
 
+// If `theme-mode` isn't available in localStorage, set it's initial value to `light`
+if (!getLs("theme-mode")) {
+  setLs("theme-mode", "light");
+}
+
+bodyEl.setAttribute("data-theme-mode", getLs("theme-mode")); // Set `data-theme-mode` to `themeMode` for the body element
+
+if (bodyEl.getAttribute("data-theme-mode") == "dark") {
+  themeBtnIcon.classList.replace("fa-sun", "fa-moon");
+}
+
 window.onload = (e) => {
-  // If `theme-mode` isn't available in localStorage, set it's initial value to `light`
-  if (getLs("theme-mode")) {
-    setLs("theme-mode", "light");
-  }
-
-  bodyEl.setAttribute("data-theme-mode", getLs("theme-mode")); // Set `data-theme-mode` to `themeMode` for the body element
-
-  if (bodyEl.getAttribute("data-theme-mode") == "dark") {
-    themeBtnIcon.classList.replace("fa-sun", "fa-moon");
-  }
-
   // Add `click` listener for toggle theme button
   toggleThemeBtn.addEventListener("click", (e) => {
     if (getLs("theme-mode") == "light") {
