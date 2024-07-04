@@ -6,7 +6,6 @@ header {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
   color: var(--background-color);
   height: 4rem;
-  /* margin-bottom: 5rem; */
   position: fixed;
   top: 0;
   width: 100%;

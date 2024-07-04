@@ -9,7 +9,12 @@
   padding: 0;
 }
 
-body {
+body[data-theme-mode="light"] {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+body[data-theme-mode="dark"] {
+  background-color: var(--text-color);
+  color: var(--background-color);
 }

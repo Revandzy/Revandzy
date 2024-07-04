@@ -15,7 +15,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 4rem !important;
-  /* row-gap: 5rem !important; */
 }
 
 /* Section */
@@ -24,12 +23,17 @@ section {
   padding-top: 5rem;
 }
 
-section:nth-child(odd) {
-  /* background-color: green; */
-}
-
 section .section-title {
   font-weight: bold;
   font-size: xx-large;
   margin: 0 0 1.5rem 0;
+}
+
+#toggleThemeBtn {
+  background: transparent;
+  border: none;
+  color: var(--background-color);
+  cursor: pointer;
+  font-size: larger;
+  padding: 1rem;
 }
