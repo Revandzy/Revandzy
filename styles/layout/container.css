@@ -1,0 +1,29 @@
+@import url("../utils/breakpoints.css");
+@import url("../utils/colors.css");
+
+@media (max-width: var(--breakpoint-xs)) {
+  /* Styles for extra small devices */
+}
+
+@media (min-width: var(--breakpoint-sm)) {
+  /* Styles for small devices */
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  /* Styles for medium devices */
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  /* Styles for large devices */
+}
+
+@media (min-width: var(--breakpoint-xl)) {
+  /* Styles for extra large devices */
+}
+
+.container {
+  width: 100%;
+  max-width: var(--breakpoint-lg);
+  margin: 0 auto;
+  padding: 0 1.3rem;
+}

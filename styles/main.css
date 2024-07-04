@@ -1,0 +1,15 @@
+@import url("utils/colors.css");
+@import url("layout/container.css");
+@import url("layout/header.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

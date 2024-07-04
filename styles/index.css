@@ -1,0 +1,35 @@
+@import url("main.css");
+@import url("utils//colors.css");
+
+span.name {
+  color: var(--secondary-color);
+}
+
+span.react {
+  color: #61dbfb;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem !important;
+  /* row-gap: 5rem !important; */
+}
+
+/* Section */
+section {
+  height: calc(100vh - 4rem);
+  padding-top: 5rem;
+}
+
+section:nth-child(odd) {
+  /* background-color: green; */
+}
+
+section .section-title {
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0 0 1.5rem 0;
+}
